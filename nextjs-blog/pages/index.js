@@ -12,23 +12,24 @@ export default function Home() {
     justifyContent: 'flex-start'
   }
   return (
-    <Container style={{ background: "grey" }}>
+    <Container style={{ background: "grey"}}>
       <Row>
         <Col sm='12'>
           <h1 style={{ display: 'flex', justifyContent: 'center', marginTop: 50, width: "auto", fontSize: 100 }}>Malcolm Marshall</h1>
+          <p style={{ display: 'flex', justifyContent: 'center', marginTop: 10, width: "auto", fontSize: 30}}>Full-Stack Software Engineer</p>
         </Col>
       </Row>
       <Row>
-        <Col style={{ display: 'flex', justifyContent: 'space-around', marginTop: 200 }}>
+        <Col style={{ display: 'flex', justifyContent: 'space-around', marginTop: 150 }}>
           <a href="https://malcolm-marshall-resume.s3.amazonaws.com/Malcolm+Marshall+Resume+2021.pdf" style={{ fontSize: 50 }}>Resume</a>
           <a href="https://www.linkedin.com/in/malcolm-marshall" style={{ fontSize: 50 }}>LinkedIn</a>
           <a href="https://www.github.com/Malcolm-Marshall" style={{ fontSize: 50 }}>Github</a>
         </Col>
       </Row>
       <Row>
-        <Col style={{ display: 'flex', justifyContent: 'space-around', marginTop: 100 }}>
+        <Col style={{ display: 'flex', justifyContent: 'space-around', marginTop: 150 }}>
           <div style={{fontSize: 25}}>(928) 899 - 6209</div>
-          <EmailIcon onClick={() => parent.location = 'mailto:m.marshall369@gmail.com'} style={{ cursor: "pointer", fontSize: 50, marginBottom: 50 }} />
+          <EmailIcon onClick={() => parent.location = 'mailto:m.marshall369@gmail.com'} style={{ cursor: "pointer", fontSize: 50, marginBottom: 200 }} />
         </Col>
       </Row>
     </Container>
