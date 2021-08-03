@@ -58,10 +58,10 @@ export default function Home() {
               <Dropdown.Toggle variant="secondary" id="dropdown-basic" size="sm">
               </Dropdown.Toggle>
               <Dropdown.Menu>
+                <Dropdown.Item href="#/action-2" id="home" onClick={(e) => view(e)}>Home</Dropdown.Item>
                 <Dropdown.Item href="#/action-1" id="about" onClick={(e) => view(e)}>About Me</Dropdown.Item>
                 <Dropdown.Item href="#/action-2" id="skills" onClick={(e) => view(e)}>Skills</Dropdown.Item>
                 <Dropdown.Item href="#/action-2" id="projects" onClick={(e) => view(e)}>Projects</Dropdown.Item>
-                <Dropdown.Item href="#/action-2" id="home" onClick={(e) => view(e)}>Home</Dropdown.Item>
               </Dropdown.Menu>
             </Dropdown>
           </Col>
