@@ -1,7 +1,15 @@
 import React, { useState } from 'react';
-import { Container, Col, Row } from 'react-bootstrap';
+import { Container, Col, Row, Image } from 'react-bootstrap';
 
 const About = () => {
+
+  const colStyle = {
+    display: "flex", justifyContent: "space-around"
+  }
+
+  const climbingCol = {
+    display: "flex", justifyContent: "center"
+  }
 
   return (
     <Container>
@@ -11,7 +19,7 @@ const About = () => {
             About Me
           </h2>
           <hr></hr>
-          <p style={{paddingTop: "20px"}}>
+          <p style={{ paddingTop: "20px" }}>
             I have always had an interest in engineering, but never knew where to start. After high school, I attended three schools over four years, mainly focusing on trade schools. I had a passion for furniture making, but decided that it was too much of a risk to commit my life to something that I love, but could potentially become tainted by being in the industry. I changed paths and let furniture making be a hobby of mine while working in restaurants for a few years. I made some great friends and learned a lot about people in general, but I needed a career change.
           </p>
           <p>
@@ -24,6 +32,35 @@ const About = () => {
             Being involved in an industry where continuous learning is so greatly encouraged is a dream. There are endless possibilities, and I can't wait to see where it takes me.
           </p>
         </Col>
+      </Row>
+      <Row>
+        <Col style={colStyle}>
+          <Image style={{ maxWidth: "450px", height: "450px" }} xs={6} src="https://portfolio-photos-malcolm-marshall.s3.amazonaws.com/IMG_0110.JPG" thumbnail />
+        </Col>
+      </Row>
+      <Row>
+        <strong style={{ display: "flex", justifyContent: "center" }}>Tower inspection somewhere in the midwest</strong>
+      </Row>
+      <Row style={{ paddingTop: "50px" }}>
+        <Col style={climbingCol}>
+          <Image style={{ maxWidth: "450px", height: "450px" }} xs={6} src="https://portfolio-photos-malcolm-marshall.s3.amazonaws.com/IMG_0188.PNG" thumbnail />
+        </Col>
+        <Col style={climbingCol}>
+          <Image style={{ maxWidth: "450px", height: "450px" }} xs={6} src="https://portfolio-photos-malcolm-marshall.s3.amazonaws.com/IMG_0814.PNG" thumbnail />
+        </Col>
+      </Row>
+        <Col style={colStyle}>
+          <strong style={{ display: "flex", justifyContent: "center" }}>Climbing in Bishop and Joshua Tree, CA</strong>
+        </Col>
+      <Row>
+      </Row>
+      <Row style={{paddingTop: "50px"}}>
+        <Col style={colStyle}>
+          <Image style={{ maxWidth: "450px", height: "450px" }} xs={6} src="https://portfolio-photos-malcolm-marshall.s3.amazonaws.com/IMG_3988.JPG" thumbnail />
+        </Col>
+      </Row>
+      <Row style={{paddingBottom: "50px"}}>
+        <strong style={{ display: "flex", justifyContent: "center" }}>Bookshelf made from white oak and catalpa</strong>
       </Row>
     </Container>
   )

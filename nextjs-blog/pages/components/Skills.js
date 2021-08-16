@@ -77,7 +77,7 @@ const Skills = () => {
       <Row>
         <Col style={{ paddingTop: "50px" }}>
           <h3>
-            Miscalanious
+          Miscellaneous
           </h3>
           <br></br>
         </Col>

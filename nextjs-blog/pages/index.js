@@ -50,7 +50,8 @@ export default function Home() {
   }
 
   return (
-    <Container style={{ backgroundImage: "url(https://www.xmple.com/wallpaper/linear-white-gradient-blue-1920x1080-c2-b0c4de-faebd7-a-285-f-14.svg)", backgroundSize: "cover" }}>
+    <>
+    <Container className="bg-image" style={{ backgroundImage: "url(https://www.xmple.com/wallpaper/linear-white-gradient-blue-1920x1080-c2-b0c4de-faebd7-a-285-f-14.svg)", backgroundSize: "cover"}}>
       <Row>
         <Col sm='12'>
           <Col style={{ display: 'flex', justifyContent: 'flex-end', marginTop: 10, width: "auto", fontSize: 50 }}>
@@ -119,6 +120,6 @@ export default function Home() {
       {projects ?
         <Projects />
         : null}
-    </Container>
+    </Container></>
   )
 }
