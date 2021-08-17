@@ -9,6 +9,7 @@ import PhoneIphoneIcon from '@material-ui/icons/PhoneIphone';
 import FileCopyIcon from '@material-ui/icons/FileCopy';
 import GitHubIcon from '@material-ui/icons/GitHub';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
+import PictureAsPdfIcon from '@material-ui/icons/PictureAsPdf';
 import Projects from './components/Projects.js';
 import Skills from './components/Skills.js';
 import About from './components/About.js';
@@ -56,7 +57,7 @@ export default function Home() {
         <Col sm='12'>
           <Col style={{ display: 'flex', justifyContent: 'flex-end', marginTop: 10, width: "auto", fontSize: 50 }}>
             <Dropdown size="sm">
-              <Dropdown.Toggle variant="secondary" id="dropdown-basic" size="sm">
+              <Dropdown.Toggle variant="secondary" id="dropdown-basic" size="sm"> More...
               </Dropdown.Toggle>
               <Dropdown.Menu>
                 <Dropdown.Item href="#/action-2" id="home" onClick={(e) => view(e)}>Home</Dropdown.Item>
@@ -83,7 +84,7 @@ export default function Home() {
         <>
           <Row style={{ marginTop: 150 }}>
             <Col style={{ display: "flex", justifyContent: "flex-start" }}>
-              <FileCopyIcon style={{ cursor: "pointer", fontSize: 70 }} />
+              <PictureAsPdfIcon style={{ cursor: "pointer", fontSize: 70 }} />
               <a href="https://malcolm-marshall-resume.s3.amazonaws.com/Malcolm+Marshall+Resume+2021.pdf" style={{ fontSize: 50 }}>Resume</a>
             </Col>
             <Col style={{ display: "flex", justifyContent: "center" }}>
