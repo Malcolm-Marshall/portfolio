@@ -68,8 +68,8 @@ export default function Home() {
           </Col>
           {home ?
             <Row>
-              <Col>
-                <h1 style={{ display: 'flex', justifyContent: 'center', width: "auto", fontSize: 100 }}>Malcolm Marshall</h1>
+              <Col style={{ display: 'flex', justifyContent: 'center', width: "auto", fontSize: 100 }}>
+                <h1 style={{fontSize: 100}}>Malcolm Marshall</h1>
               </Col>
               <Row>
                 <Col>
