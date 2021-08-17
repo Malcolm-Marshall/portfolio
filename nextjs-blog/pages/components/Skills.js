@@ -7,22 +7,23 @@ const Skills = () => {
     display: 'flex',
     flexDirection: 'row',
     justifyContent: 'center',
+    paddingTop: "20px"
   }
 
-  const buttonStyle = "btn btn-outline-primary";
+  const buttonStyle = "btn btn-dark disabled";
 
   return (
     <Container>
       <Row>
         <Col>
           <h2>
-            Skills...
+            Skills
           </h2>
           <hr></hr>
           <br></br>
         </Col>
       </Row>
-      <Row>
+      <Row style={{paddingTop: "20px"}}>
         <Col>
           <h3>
             Front End
@@ -45,7 +46,7 @@ const Skills = () => {
           <br></br>
         </Col>
       </Row>
-      <Row>
+      <Row style={{paddingTop: "50px"}}>
         <Col style={{ paddingTop: "50px" }}>
           <h3>
             Back End
@@ -74,7 +75,7 @@ const Skills = () => {
           <br></br>
         </Col>
       </Row>
-      <Row>
+      <Row style={{paddingTop: "50px"}}>
         <Col style={{ paddingTop: "50px" }}>
           <h3>
           Miscellaneous
@@ -82,7 +83,7 @@ const Skills = () => {
           <br></br>
         </Col>
       </Row>
-      <Row style={{paddingBottom: "100px"}}>
+      <Row style={{paddingBottom: "300px"}}>
         <Col style={style}>
           <Button variant={buttonStyle}>Git</Button>
         </Col>
